@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pigoitas - Marcar Avaliação</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <section class="evaluation">
+
+        <div class="container">
+
+            <span class="section-tag">PRIMEIRO CONTACTO</span>
+
+            <h1>Marcação de Avaliação</h1>
+
+            <p>
+                Para marcar uma avaliação, entre em contacto
+                connosco através do WhatsApp.
+            </p>
+
+            <form id="whatsappForm">
+
+                <input type="text" id="childName" placeholder="Nome da Criança" required>
+                <input type="text" id="parentName" placeholder="Nome do Encarregado de Educação" required>
+
+                <select id="area">
+
+                    <option value="">Selecionar Serviço</option>
+
+                    <option>Terapia da Fala</option>
+                    <option>Terapia Ocupacional</option>
+                    <option>Psicomotricidade</option>
+                    <option>Psicomotricidade Aquática</option>
+                    <option>Psicologia</option>
+
+                </select>
+
+                <textarea id="mensagem" rows="5" placeholder="Escreva a sua mensagem"></textarea>
+
+                <button type="submit" class="btn btn-primary">
+                    Enviar por WhatsApp
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
