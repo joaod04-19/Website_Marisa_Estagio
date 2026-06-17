@@ -11,19 +11,17 @@ document.getElementById("whatsappForm").addEventListener("submit", function (e) 
     const area = document.getElementById("area").value;
     const mensagem = document.getElementById("mensagem").value;
 
-    const texto = `Olá!
+    const texto = `Olá, gostaria de marcar uma avaliação.
 
-    Gostaria de marcar uma avaliação.
+    Mensagem: ${mensagem}
 
     Nome da Criança: ${childName}
     Encarregado de Educação: ${parentName}
-    Área: ${area}
-    Mensagem: ${mensagem}`;
+    Área: ${area};`
 
     const numero = "351966044414";
 
-    const url =
-        `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
 
     window.open(url, "_blank");
 

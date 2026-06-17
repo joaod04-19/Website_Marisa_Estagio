@@ -122,7 +122,7 @@ body {
     border-radius: 55% 45% 60% 40% / 45% 35% 65% 55%;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 20px 40px rgba(0,0,0,.10);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .10);
     transition: .4s;
 }
 
@@ -162,33 +162,6 @@ body {
     bottom: 50px;
     left: -90px;
     z-index: -1;
-}
-
-/* ---------------------------------------------------------------------- */
-/* RESPONSIVO */
-@media(max-width:992px) {
-    .hero .container {
-        flex-direction: column;
-        text-align: center;
-        padding-top: 50px;
-    }
-
-    .hero-buttons {
-        justify-content: center;
-    }
-
-    .hero-left h1 {
-        font-size: 3rem;
-    }
-
-    .hero-left h2 {
-        font-size: 2rem;
-    }
-
-    .image-blob {
-        width: 400px;
-        height: 400px;
-    }
 }
 
 
@@ -541,33 +514,21 @@ body {
 }
 
 .team-svg-1 {
-    width: 220px;
-    top: 50px;
-    right: -90px;
+    width: 200px;
+    bottom: 10px;
+    left: 50px;
 }
 
 .team-svg-2 {
-    width: 220px;
-    bottom: 30px;
-    left: -80px;
+    width: 300px;
+    top: 80px;
+    left: -30px;
 }
 
 .team-svg-3 {
-    width: 220px;
-    bottom: -30px;
-    right: 80px;
-}
-
-.team-svg-4 {
-    width: 220px;
-    top: 230px;
-    right: 120px;
-}
-
-.team-svg-5 {
-    width: 220px;
-    top: 70px;
-    left: 70px;
+    width: 320px;
+    bottom: 50px;
+    right: -90px;
 }
 
 
@@ -638,8 +599,8 @@ body {
 
 .gallery-svg-3 {
     width: 220px;
-    top: 10px;
-    left: 80px;
+    top: 180px;
+    left: 70px;
 }
 
 .gallery-svg-4 {
@@ -784,14 +745,14 @@ body {
 /* ================================
     PÁGINA - EQUIPA (equipa.html)
 =================================== */
-.team-page {
+.member-page {
     position: relative;
     overflow: hidden;
     padding: 120px 0;
     text-align: center;
 }
 
-.team-page h1 {
+.member-page h1 {
     font-size: 3rem;
     color: var(--darkblue);
     margin-bottom: 60px;
@@ -897,84 +858,84 @@ body {
 
 /* ---------------------------------------------------------------------- */
 /* SVGs DECORATIVOS DA PÁGINA - EQUIPA */
-.team-shape {
+.member-shape {
     position: absolute;
     pointer-events: none;
     z-index: 1;
 }
 
-.team-page .container {
+.member-page .container {
     position: relative;
     z-index: 2;
 }
 
-.team-svg-1 {
+.member-svg-1 {
     width: 220px;
     top: 50px;
     right: 50px;
 }
 
-.team-svg-2 {
+.member-svg-2 {
     width: 180px;
     top: 550px;
     left: -60px;
 }
 
-.team-svg-3 {
+.member-svg-3 {
     width: 240px;
     top: 1000px;
     right: -50px;
 }
 
-.team-svg-4 {
+.member-svg-4 {
     width: 200px;
     top: 1550px;
     left: -70px;
 }
 
-.team-svg-5 {
+.member-svg-5 {
     width: 220px;
     top: 2100px;
     right: -80px;
 }
 
-.team-svg-6 {
+.member-svg-6 {
     width: 180px;
     top: 2650px;
     left: -40px;
 }
 
-.team-svg-7 {
+.member-svg-7 {
     width: 240px;
     top: 3200px;
     right: -60px;
 }
 
-.team-svg-8 {
+.member-svg-8 {
     width: 200px;
     top: 3750px;
     left: -50px;
 }
 
-.team-svg-9 {
+.member-svg-9 {
     width: 220px;
     top: 4300px;
     right: -70px;
 }
 
-.team-svg-10 {
+.member-svg-10 {
     width: 180px;
     top: 4850px;
     left: -60px;
 }
 
-.team-svg-11 {
+.member-svg-11 {
     width: 240px;
     top: 5400px;
     right: -70px;
 }
 
-.team-svg-12 {
+.member-svg-12 {
     width: 200px;
     top: 5950px;
     left: -50px;
@@ -1028,34 +989,75 @@ body {
 /* ============================================================================================================================= */
 /* ============================================================================================================================= */
 
+/* ====================
+    RESPONSIVO TABLET
+======================= */
+@media (max-width: 992px) {
+
+    .hero {
+        padding: 90px 0;
+    }
+
+    .logo {
+        width: 250px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .image-blob {
+        width: 380px;
+        height: 380px;
+    }
+
+}
+
+
+/* ============================================================================================================================= */
+/* ============================================================================================================================= */
+
 /* =====================
     RESPONSIVO MOBILE
 ======================== */
-@media (max-width: 768px) {
+@media(max-width:768px) {
+
+    /* CONTAINER */
+    .container {
+        width: 92%;
+    }
 
     /* HERO */
-    .hero .container {
-        flex-direction: column;
-        text-align: center;
-        gap: 40px;
+    .hero {
+        padding: 80px 0;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
     }
 
     .hero-buttons {
         flex-direction: column;
         align-items: center;
-    }
-
-    .hero-left h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero-left h2 {
-        font-size: 1.8rem;
+        gap: 15px;
     }
 
     .image-blob {
-        width: 300px;
-        height: 300px;
+        width: 280px;
+        height: 280px;
+        margin-top: 30px;
     }
 
     /* SERVIÇOS */
@@ -1063,7 +1065,7 @@ body {
         grid-template-columns: 1fr;
     }
 
-    /* EQUIPA (HOME) */
+    /* EQUIPA HOME */
     .employees-grid {
         grid-template-columns: 1fr;
     }
@@ -1073,34 +1075,34 @@ body {
         grid-template-columns: 1fr;
     }
 
-    /* EQUIPA.HTML */
+    /* SOBRE NÓS */
+    .story-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* CENTRO DE ESTUDOS */
+    .study-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* EQUIPA COMPLETA */
     .member-employee,
     .member-employee.reverse {
         flex-direction: column;
-        gap: 40px;
         text-align: center;
+        gap: 40px;
     }
 
     .member-photo img {
-        max-width: 300px;
+        max-width: 280px;
     }
 
-    /* FOOTER */
-    .footer-content {
-        flex-direction: column;
-        gap: 30px;
-        text-align: center;
-    }
-
-    /* ESCONDER SVGs */
-    .hero-shape,
-    .services-shape,
-    .gallery-shape,
-    .team-shape {
-        display: none;
-    }
-
-    /* BOTÕES (equipa.html) */
+    /* CTA */
     .cta-buttons {
         display: flex;
         flex-direction: column;
@@ -1111,7 +1113,22 @@ body {
     .cta-buttons .btn {
         width: 100%;
         max-width: 280px;
+    }
+
+    /* FOOTER */
+    .footer-content {
+        flex-direction: column;
         text-align: center;
+        gap: 30px;
+    }
+
+    /* ESCONDER SVGs */
+    .hero-shape,
+    .services-shape,
+    .gallery-shape,
+    .team-shape,
+    .member-shape {
+        display: none;
     }
 
 }
