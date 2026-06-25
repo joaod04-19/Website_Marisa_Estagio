@@ -21,19 +21,19 @@ Sendo elaborado de forma simples e agradável aos olhas das crianças e dos enca
 
 
 # Tecnologias Utilizadas
-. HTML;
+- HTML;
 
-. CSS;
+- CSS;
 
-. JavaScript;
+- JavaScript;
 
 
 # Bibliotecas Utilizadas e Recursos Externos
-. Font Awesome (Ícones);
+- Font Awesome (Ícones);
 
-. Google Fonts (Nunito);
+- Google Fonts (Nunito);
 
-. SVGs personalizados para Elementos Decorativos(https://www.svgbackgrounds.com/elements/);
+- SVGs personalizados para Elementos Decorativos (https://www.svgbackgrounds.com/elements/);
 
 
 # Estrutura do Website
